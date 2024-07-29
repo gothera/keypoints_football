@@ -1,0 +1,6 @@
+opencv-python
+matplotlib
+numpy
+jupyterlab
+torch==2.2.0
+ultralytics==8.0.200
