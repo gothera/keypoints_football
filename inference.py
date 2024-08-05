@@ -15,7 +15,7 @@ def plot_keypoints(image, keypoints, radius=3, color=(0, 0, 255)):
     
 
 # Load the YOLOv8n-pose model
-model = YOLO('last.pt')
+model = YOLO('last2.pt')
 
 # Open the input video
 video_path = "test2.mp4"

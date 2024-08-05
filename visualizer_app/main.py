@@ -1,7 +1,7 @@
 from fasthtml.common import *
 
 current_idx = -1
-dir = "/Users/cosmincojocaru/keypoints_football/keypoints_football/keypoints_dataset/keypoints_dataset/train"
+dir = "/Users/cosmincojocaru/keypoints_football/keypoints_football/keypoints_dataset/train_resized"
 
 def get_image_paths(directory):
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp')
@@ -35,7 +35,7 @@ def get(session):
     
 @app.get("/img/{filename}")
 def get(filename: str):
-    return FileResponse(f"/Users/cosmincojocaru/keypoints_football/keypoints_football/keypoints_dataset/keypoints_dataset/train/{filename}")
+    return FileResponse(f"/Users/cosmincojocaru/keypoints_football/keypoints_football/keypoints_dataset/train_resized/{filename}")
 
 serve()
 
